@@ -22,7 +22,7 @@ export default function NavBar() {
                 </div>
             </div>
             <div className='container mx-auto mt-4 px-4'>
-                <h2 className='text-xl font-semibold text-center'>'Tu ropa, nuestra pasión: ¡lavamos tus preocupaciones!'</h2>
+                <h2 className='text-xl font-semibold text-center'>&apos;Tu ropa, nuestra pasión: ¡lavamos tus preocupaciones!&apos;</h2>
                 <nav className="flex justify-center space-x-4 py-4">
                     <Link className="block" href="/">
                         Inicio
