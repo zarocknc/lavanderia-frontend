@@ -23,17 +23,17 @@ export default function NavBar() {
             </div>
             <div className='container mx-auto mt-4 px-4'>
                 <h2 className='text-xl font-semibold text-center'>&apos;Tu ropa, nuestra pasión: ¡lavamos tus preocupaciones!&apos;</h2>
-                <nav className="flex justify-center space-x-4 py-4">
-                    <Link className="block" href="/">
+                <nav className="flex justify-center space-x-4 py-4 underline ">
+                    <Link className="block hover:text-blue-500" href="/">
                         Inicio
                     </Link>
-                    <Link className="block" href="/servicios">
+                    <Link className="block hover:text-blue-500" href="/servicios">
                         Servicios
                     </Link>
-                    <Link className="block" href="/nosotros">
+                    <Link className="block hover:text-blue-500" href="/nosotros">
                         Nosotros
                     </Link>
-                    <Link className="block" href="/contacto">
+                    <Link className="block hover:text-blue-500" href="/contacto">
                         Contacto
                     </Link>
                 </nav>
