@@ -2,6 +2,9 @@ import Image from 'next/image';
 import logo from '@/assets/pepe-logo.png'
 import Link from 'next/link';
 import { Avatar, AvatarGroup, AvatarIcon } from '@nextui-org/avatar';
+import { Dropdown, DropdownTrigger, DropdownMenu, DropdownSection, DropdownItem } from "@nextui-org/dropdown";
+import { Button } from "@nextui-org/button";
+import { cerrarSession } from '@/app/login/cerrarSession';
 
 export default function NavBar() {
     // img on assets logo.png
@@ -17,7 +20,12 @@ export default function NavBar() {
                 </div>
                 {/* AT RIGHT: Home, About, Services, Contact */}
                 <div className='flex items-center justify-end space-x-4 text-black'>
-                    <Avatar name='Sech' />
+
+                    <form action={cerrarSession}>
+                        <Button type='submit' color='danger'>
+                            Cerrar session
+                        </Button>
+                    </form>
 
                 </div>
             </div>
